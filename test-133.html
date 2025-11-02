@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>norm() Explaination</title>
+<title>ENGR 133 Testing PreTeXt</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -128,7 +128,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="test-133.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="test-133.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><a class="next-button button" href="normExplain.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -137,49 +137,10 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active"><li class="toc-item toc-chapter active"><div class="toc-title-box"><a href="normExplain.html" class="internal"><span class="codenumber">1</span> <span class="title">norm() Explaination</span></a></div></li></ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="normExplain"><h2 class="heading">
-<span class="type">Chapter</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">norm() Explaination</span>
-</h2>
-<section class="introduction" id="normExplain-2"><div class="para" id="normExplain-2-1">Text before the first section.<div class="autopermalink" data-description="Paragraph"><a href="#normExplain-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="para" id="normExplain-3">In your knn_single_prediction function for task 1, you are asked to use the np.linalg.norm(). I have received quite a few questions about what this is doing, and how to properly use it in the program, so I will go over that here.<div class="autopermalink" data-description="Paragraph"><a href="#normExplain-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="normExplain-4">As the instructions state, you are trying to calculate the ‘distance’ away your new_example input is from all of the test data.<div class="autopermalink" data-description="Paragraph"><a href="#normExplain-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="normExplain-5">You may recall from a prior math or physics class where you calcualted distance between two points using a “distance formula” that likely looked something like : <span class="process-math">\(d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#normExplain-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="normExplain-6">if (x1,y1) is (0,0), you may be able to recognize this as solving for the hypotenuse of a right triangle using the Pythagorean theorem.<div class="autopermalink" data-description="Paragraph"><a href="#normExplain-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="normExplain-7">In calc2 and later physics classes, you will use a similar function to determine the magnitude of vectors.<div class="autopermalink" data-description="Paragraph"><a href="#normExplain-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="normExplain-8">In Calc3, you will learn you can use this same thing for finding the distance between two points in 3 dimensions too (and as many as you may want): <span class="process-math">\((d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2+ (z_2 - z_1)^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#normExplain-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="normExplain-9">Per the original function name, this process is called normalization.  ‘normalizing’ values calculated the magnitude of the values provided.  You can provide 2 values, 3 values, even dozens of values if you wanted to, and the function will add up the square of all of the values, and then take the square root to provide a normalized value.<div class="autopermalink" data-description="Paragraph"><a href="#normExplain-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="normExplain-10">Numpy arrays make this go very quickly, as they have a normalization function already.  You can replicate this using standard numpy operations too.<div class="autopermalink" data-description="Paragraph"><a href="#normExplain-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<figure class="listing figure-like" id="program-activecode-python"><figcaption><span class="type">Listing</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.0.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>An interactive Python program, using <span class="booktitle">Runestone</span><div class="autopermalink" data-description="Listing 1.0.1: An interactive Python program, using Runestone"><a href="#program-activecode-python" title="Copy heading and permalink for Listing 1.0.1: An interactive Python program, using Runestone" aria-label="Copy heading and permalink for Listing 1.0.1: An interactive Python program, using Runestone">🔗</a></div></figcaption><div class="listing__contents"><div class="ptx-runestone-container"><div class="runestone explainer ac_section "><div data-component="activecode" id="rs-python-hello-world"><textarea data-lang="python" data-audio="" data-coach="true" style="visibility: hidden;" id="rs-python-hello-world_editor" data-question_label="" data-codelens="true" data-timelimit="25000">import numpy as np
-# test points.  Feel free to test out multiple sets
-p1 = np.array([1,5])
-p2 = np.array([3,6])
-
-#simmilar to what you would get from your csv file
-#p1 = np.array([77.5901, 74.89, 87.53, 76.63, 16.03, 17.25, 0, 0])
-#p2 = np.array([42.2627, 68.19, 101.12, 90.50, 112.23, 107.99, 25, 1])
-
-
-# take the differences of the array
-d1 = p2- p1
-
-norm= np.linalg.norm(d1)
-
-dist= np.sqrt(sum(d1**2))
-
-print(dist)
-print(norm)
-</textarea></div></div></div></div></figure><div class="autopermalink" data-description="Chapter 1: norm() Explaination"><a href="#normExplain" title="Copy heading and permalink for Chapter 1: norm() Explaination" aria-label="Copy heading and permalink for Chapter 1: norm() Explaination">🔗</a></div></section></div>
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active"><li class="toc-item toc-chapter"><div class="toc-title-box"><a href="normExplain.html" class="internal"><span class="codenumber">1</span> <span class="title">norm() Explaination</span></a></div></li></ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="book" id="test-133"><nav class="summary-links"><ul><li><a href="normExplain.html" class="internal"><span class="codenumber">1</span> <span class="title">norm() Explaination</span></a></li></ul></nav><div class="autopermalink" data-description="Book: ENGR 133 Testing PreTeXt"><a href="#test-133" title="Copy heading and permalink for Book: ENGR 133 Testing PreTeXt" aria-label="Copy heading and permalink for Book: ENGR 133 Testing PreTeXt">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="test-133.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+<span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="normExplain.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
